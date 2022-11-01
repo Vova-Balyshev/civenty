@@ -14,7 +14,7 @@
 <body class="body">
   <div class="body__container">
     <header class="header body__header">
-      <div class="container">
+      <div class="container-fluid">
         <nav class="header__nav">
           <a href="#" class="header__logo"></a>
           <ul class="header__nav-menu">
@@ -62,18 +62,37 @@
                 <img src="./images/Down Arrow.svg" alt="arrow">
             </div>
             <div class="col-lg-6 col-sm-12">
-              <img 
-                src="./images/Hero 3D.svg" 
-                alt="3dhero"
-                class="getStarted__hero"
-              >
+              <div class="getStarted__centered">
+                <img 
+                  src="./images/Hero 3D.svg" 
+                  alt="3dhero"
+                  class="getStarted__hero"
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="logos">
         <div class="logos__container">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="logos__line">
+            <div class="">
+              <img src="./images/Grouplogo1.svg" class="" alt="logo carousel">
+            </div>
+            <div class="">
+              <img src="./images/Grouplogo2.svg" class="" alt="logo carousel">
+            </div>
+            <div class="">
+              <img src="./images/Grouplogo3.svg" class="" alt="logo carousel">
+            </div>
+            <div class="">
+              <img src="./images/Grouplogo4.svg" class="" alt="logo carousel">
+            </div>
+            <div class="">
+              <img src="./images/Grouplogo5.svg" class="" alt="logo carousel">
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide logos__slider" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./images/Grouplogo1.svg" class="d-block logos__logo" alt="logo carousel">
@@ -84,23 +103,29 @@
               <div class="carousel-item">
                 <img src="./images/Grouplogo3.svg" class="d-block logos__logo" alt="logo carousel">
               </div>
+              <div class="carousel-item">
+                <img src="./images/Grouplogo4.svg" class="d-block logos__logo" alt="logo carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Grouplogo5.svg" class="d-block logos__logo" alt="logo carousel">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
           </div>
         </div>
       </section>
       <section class="subscription">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-xs-12 col-lg-6 subscription__hero">
-              <img src="./images/Content Image 02.svg" alt="">
+            <div class="col-sm-12 col-xs-12 col-lg-6 ">
+              <img src="./images/Content Image 02.svg" alt="hero" class="subscription__hero">
             </div>
             <div class="col-sm-12 col-xs-12 col-lg-6" id="subscription">
               <form 
@@ -115,10 +140,10 @@
                   Location
                 </p>
                 <input 
-                type="text"
-                name="country"
-                class="subscription__input"
-                required
+                  type="text"
+                  name="country"
+                  class="subscription__input"
+                  required
                 >
               </label>
               <label class="subscription__label">
@@ -151,10 +176,8 @@
               </button>
               </form>
             </div>
-            
           </div>
         </div>
-  
       </section>
     </main>
   </div>

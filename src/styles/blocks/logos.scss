@@ -1,6 +1,25 @@
 .logos {
   margin: 0 auto;
 
+  &__slider {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__line {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+    }
+    @include fullHD {
+      gap: 120px;
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: center;
