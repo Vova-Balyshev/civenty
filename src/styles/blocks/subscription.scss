@@ -1,0 +1,65 @@
+.subscription {
+  &__hero {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    width: 420px;
+    height: 440px;
+    background-color: $blue-button;
+    border-radius: 16px;
+    padding: 35px 35px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 29px;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
+
+  &__input {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    outline-style: none;
+    border-style: none;
+    color: #1D293F;
+  }
+
+  &__label {
+    width: 349.89px;
+    height: 65.19px;
+    border-style: none;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 10px 15px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    font-family: 'Lato';
+    @include orangeButton 
+  }
+
+  &__text {
+    color: $text-color;
+    opacity: 0.35;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

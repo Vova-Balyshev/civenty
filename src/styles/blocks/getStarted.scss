@@ -1,0 +1,56 @@
+.getStarted {
+  &__title {
+    font-family: 'DM Sans';
+    font-size: 70px;
+    line-height: 77px;
+    letter-spacing: -2.50105px;
+    color: #19191B;
+    margin-bottom: 30px;
+
+    @include desktop {
+      font-size: 80px;
+    }
+  }
+
+  &__text {
+    font-family: 'Mulish';
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: $blue-button;
+    font-family: 'DM Sans';
+    font-size: 17px;
+    line-height: 19px;
+    color: #fff;
+    margin-right: 40px;
+
+    @include desktop {
+      width: 200px;
+      height: 60px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__hero {
+    display: block;
+    width: 500px;
+    margin-bottom: 100px;
+
+    @include desktop {
+      width: 580px;
+    }
+  }
+}

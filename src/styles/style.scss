@@ -1,3 +1,9 @@
-.ss {
-  color: yellow;
-}
+@import './utils/variables';
+@import "./utils/normalize";
+@import './utils/mixins';
+@import './blocks/header.scss';
+@import './blocks/hamburger.scss';
+@import './blocks/body.scss';
+@import './blocks/getStarted.scss';
+@import './blocks/logos.scss';
+@import './blocks/subscription.scss';

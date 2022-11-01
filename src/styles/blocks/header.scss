@@ -1,0 +1,66 @@
+.header {
+  &__logo {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-image: url('../images/Logo_Color.svg');
+  }
+
+  &__button {
+    display: none;
+    font-family: 'DM Sans';
+    font-size: 17px;
+    line-height: 19px;
+
+
+    @include desktop {
+      @include orangeButton
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-menu {
+      display: flex;
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      flex-direction: row;
+      gap: 50px;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      transition: 0.3s;
+
+      @include desktop {
+        position: static;
+        width: 50%;
+        left: 0;
+        top: 40px;
+      }
+
+      &.active {
+        top: 60px;
+        left: 40px;
+      }
+    }
+
+    &-item {
+      list-style: none;
+    }
+
+  &-link {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-size: 20px;
+    color: $text-color;
+
+    &:hover {
+      color: #19191B;
+    }
+  }
+  }
+}
