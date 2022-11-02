@@ -1,7 +1,7 @@
-// import Swiper from 'swiper/bundle';
+/* eslint-disable no-unused-vars */
+/* eslint-env browser */
 
-// import 'swiper/css/bundle';
-// import './styles/style.scss';
+import './styles/style.scss';
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.header__nav-menu');
@@ -25,21 +25,3 @@ navLink.forEach((n) => n.addEventListener('click', closeMenu));
 function lockScroll() {
   document.body.classList.toggle('lock-scroll');
 }
-
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'gorizontal',
-//   loop: true,
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   breakpoints: {
-
-//   },
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });

@@ -16,8 +16,8 @@ p {
 .header__logo {
   position: relative;
   width: 200px;
+  max-width: 100%;
   height: 40px;
-  background-image: url("../images/Logo_Color.svg");
 }
 .header__button {
   display: none;
@@ -179,8 +179,7 @@ p {
   margin-bottom: 100px;
 }
 .getStarted__hero {
-  display: block;
-  width: 480px;
+  max-width: 100%;
   margin-bottom: 100px;
 }
 @media (min-width: 768px) {
@@ -192,9 +191,6 @@ p {
   margin: 0 auto;
 }
 
-.logos {
-  margin: 0 auto;
-}
 @media (min-width: 1024px) {
   .logos__slider {
     display: none;
@@ -218,17 +214,18 @@ p {
 .logos__container {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin: 0 auto;
 }
 .logos__logo {
   height: 50px;
   width: 100%;
+  max-width: 100%;
 }
 
 .subscription__hero {
   display: block;
-  margin: 0 auto;
   margin-bottom: 100px;
+  max-width: 100%;
 }
 @media (min-width: 1024px) {
   .subscription__hero {
@@ -236,12 +233,17 @@ p {
   }
 }
 .subscription__form {
-  width: 420px;
+  width: 100%;
   height: 440px;
   background-color: #5454D4;
   border-radius: 16px;
   padding: 35px 35px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .subscription__form {
+    width: 420px;
+  }
 }
 .subscription__title {
   color: #fff;
@@ -253,6 +255,7 @@ p {
   font-weight: 700;
 }
 .subscription__input {
+  width: 100%;
   font-family: "Lato";
   font-size: 16px;
   line-height: 26px;

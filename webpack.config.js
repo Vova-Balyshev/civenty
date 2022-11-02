@@ -1,20 +1,25 @@
+/* eslint-disable new-cap */
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/main.js',
   devServer: {
     static: './dist',
   },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
   module: {
     rules: [{
-      test:/\.(s*)css$/,
+      test: /\.(s*)css$/,
       use: [
         miniCss.loader,
         'css-loader',
         'sass-loader',
-      ]
+      ],
     },
     {
       test: /\.(gif|png|jpe?g|svg)$/i,
@@ -27,18 +32,11 @@ module.exports = {
           },
         },
       ],
-    }]
+    }],
   },
-  //  optimization: {
-    //   runtimeChunk: 'single',
-    // },
-    plugins: [
-      new miniCss({
-        filename: 'style.css',
-      }),
-    ],
-    output: {
-       filename: 'bundle.js',
-       path: path.resolve(__dirname, 'dist')
-    },
-  };
+  plugins: [
+    new miniCss({
+      filename: 'styles.css',
+    }),
+  ],
+};

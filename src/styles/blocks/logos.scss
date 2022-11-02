@@ -1,5 +1,4 @@
 .logos {
-  margin: 0 auto;
 
   &__slider {
     @include desktop {
@@ -23,11 +22,13 @@
   &__container {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 0 auto;
+    // margin-bottom: 100px;
   }
 
   &__logo {
     height: 50px;
     width: 100%;
+    max-width: 100%;
   }
 }

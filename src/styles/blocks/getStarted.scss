@@ -45,8 +45,8 @@
   }
 
   &__hero {
-    display: block;
-    width: 480px;
+    // display: block;
+    max-width: 100%;
     margin-bottom: 100px;
 
     @include tablet {
