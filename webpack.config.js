@@ -22,16 +22,24 @@ module.exports = {
       ],
     },
     {
+      test: /\.html$/i,
+      loader: 'html-loader',
+    },
+    {
       test: /\.(gif|png|jpe?g|svg)$/i,
-      use: [
-        'file-loader',
-        {
-          loader: 'image-webpack-loader',
-          options: {
-            disable: true, // webpack@2.x and newer
-          },
-        },
-      ],
+      type: 'asset/resource',
+      generator: {
+        filename: 'images/[name]-[hash][ext]',
+      },
+      // use: [
+      //   'file-loader',
+      //   {
+      //     loader: 'image-webpack-loader',
+      //     options: {
+      //       disable: true, // webpack@2.x and newer
+      //     },
+      //   },
+      // ],
     }],
   },
   plugins: [

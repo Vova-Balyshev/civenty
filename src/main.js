@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-env browser */
 
+import html from '../dist/index.html';
 import './styles/style.scss';
 
 const hamburger = document.querySelector('.hamburger');
